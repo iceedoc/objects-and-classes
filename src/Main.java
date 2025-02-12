@@ -10,5 +10,17 @@ public class Main {
 
         Onegin.setPublicationYear(1831);
         System.out.println("Книга 2 (после изменения года публикации): " + Onegin.getTitle() + " (" + Onegin.getAuthor().getFirstName() + " " + Onegin.getAuthor().getLastName() + ", " + Onegin.getPublicationYear() + ")");
+
+        System.out.println("Книга 1: " + Karenina);
+        System.out.println("Автор 1: " + Tolstoy);
+
+        System.out.println("Автор 1 равен автору 2: " + Tolstoy.equals(Pushkin));
+        System.out.println("hashCode автора 1: " + Tolstoy.hashCode());
+        System.out.println("hashCode автора 2: " + Pushkin.hashCode());
+
+        System.out.println("Книга 1 равна книге 2: " + Karenina.equals(Onegin));
+        System.out.println("hashCode книги 1: " + Karenina.hashCode());
+        System.out.println("hashCode книги 2: " + Onegin.hashCode());
+
     }
 }
